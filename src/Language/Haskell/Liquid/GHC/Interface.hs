@@ -206,7 +206,7 @@ configureDynFlags cfg tmp = do
 
                  , debugLevel   = 1               -- insert SourceNotes
                  -- , profAuto     = ProfAutoCalls
-                 , ghcLink      = LinkInMemory
+                 , ghcLink      = LinkDynLib
                  , hscTarget    = HscInterpreted
                  , ghcMode      = CompManager
                  -- prevent GHC from printing anything, unless in Loud mode
